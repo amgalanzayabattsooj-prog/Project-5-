@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* huviin dundiin tal */
+  align-items: center;       /* ydruu dundiin tal */
+
+  /* Hargis davhar + background zurag */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./76edb6b39aaf6ae696bc6bdbd6228c2f.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Tsagaan card */
+.card {
+  display: flex;             /* zuun baruun 2 hesgiig dalgaltlan */
+  width: 880px;
+  height: 650px;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;          /* zurag ni burgenii gadna garahgui */
+}
+
+/* Zuun tal: zurag */
+.left {
+  flex: 1;
+  background-image: url("./76edb6b39aaf6ae696bc6bdbd6228c2f.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Baruun tal: form */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;    /* deeshees doosh ni daraalna */
+  justify-content: center;
+  padding: 0 40px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #12302f;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 46px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  padding: 0 14px;
+  font-size: 14px;
+}
+
+.accept {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.accept a {
+  color: #c9a400;
+  text-decoration: none;
+}
+
+button {
+  height: 46px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
